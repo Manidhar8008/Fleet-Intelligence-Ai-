@@ -32,3 +32,22 @@ quantitative finance models, and advanced analytics for fleet optimization.**
 
 ---
 *Building daily - Follow my progress! "NO RUSH, GITHUB GREEN EVERY DAY!" 🎯*
+
+## Battery Level Prediction
+
+- Data: ~10,000+ historical vehicle records from `vehicles` table (SQLite).
+- Features:
+  - latitude, longitude
+  - is_disabled, is_reserved
+  - vehicle_type (one-hot encoded)
+- Model: Linear Regression (scikit-learn)
+- Metrics:
+  - MAE: X.XX
+  - R²: Y.YY
+
+### Usage
+
+Train model:
+```bash
+python -m src.battery_predict.train_battery_model
+
