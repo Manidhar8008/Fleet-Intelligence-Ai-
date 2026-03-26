@@ -1,6 +1,0 @@
-vehicle_id,timestamp,city,battery_level,rides_today,distance_km
-LIME_001,2025-11-25 08:00:00,Bangalore,85,4,12.3
-LIME_002,2025-11-25 08:15:00,Bangalore,62,2,5.8
-LIME_003,2025-11-25 08:30:00,Hyderabad,45,5,14.1
-LIME_004,2025-11-25 08:45:00,Hyderabad,30,1,3.2
-LIME_005,2025-11-25 09:00:00,Chennai,90,3,9.7

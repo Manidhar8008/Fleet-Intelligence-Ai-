@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lime Decision Dashboard (Prototype)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin-top: 40px;
+    }
+    p {
+      color: #555;
+    }
+    img {
+      max-width: 100%;
+      margin-top: 10px;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    .section {
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Lime IoT Decision Dashboard (Prototype)</h1>
+  <p>
+    This dashboard provides a high-level view of operational risk and
+    recommended actions based on trip-level decision outputs.
+  </p>
+
+  <div class="section">
+    <h2>1. Top Risky Assets</h2>
+    <p>
+      Distribution of intervention risk scores. The right tail represents
+      assets that may require immediate attention.
+    </p>
+    <img src="../artifacts/visuals/01_intervention_risk_distribution.png" alt="Risk Distribution">
+  </div>
+
+  <div class="section">
+    <h2>2. Risk vs Battery Health</h2>
+    <p>
+      Relationship between battery health and intervention risk.
+      This helps validate whether battery degradation is driving risk.
+    </p>
+    <img src="../artifacts/visuals/02_risk_vs_battery_health.png" alt="Risk vs Battery Health">
+  </div>
+
+  <div class="section">
+    <h2>3. Risk Across Utilization</h2>
+    <p>
+      How utilization percentile correlates with operational risk.
+      This highlights overused assets that may need rebalancing or maintenance.
+    </p>
+    <img src="../artifacts/visuals/03_utilization_vs_risk.png" alt="Utilization vs Risk">
+  </div>
+
+  <div class="section">
+    <h2>4. Recommended Actions Overview</h2>
+    <p>
+      Breakdown of actions recommended by the decision system.
+      This view helps operations teams estimate workload and prioritize resources.
+    </p>
+    <img src="../artifacts/visuals/04_recommended_actions_breakdown.png" alt="Action Breakdown">
+  </div>
+
+</body>
+</html>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->

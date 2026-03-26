@@ -36,3 +36,7 @@ flake8==6.0.0
 # ============ NOTEBOOKS ============
 jupyter==1.0.0
 ipywidgets==8.0.7
+
+# ============ DASHBOARD & UI ============
+streamlit==1.28.0
+plotly==5.15.0

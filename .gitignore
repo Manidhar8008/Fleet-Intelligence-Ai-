@@ -1,6 +1,10 @@
 # ============ PROJECT SPECIFIC ============
 data/raw/
 data/processed/
+data/intermediate/
+!data/generated/
+!data/generated/*.csv
+!data/generated/*.xlsx
 models/
 logs/
 *.log

@@ -1,0 +1,34 @@
+MODEL: Decision Tree
+PURPOSE: Explainability and policy validation model
+
+Evaluation Context
+------------------
+Decision Grain: Trip-level
+Positive Class: High intervention risk
+Business Priority: Interpretability and rule clarity
+
+Performance Summary
+-------------------
+Accuracy: ~0.98
+Recall (Risk = 1): Moderate (~0.71)
+ROC AUC: ~0.86
+
+Interpretation
+--------------
+The Decision Tree model provides transparent, rule-based decisions
+that are easy to explain to non-technical stakeholders.
+
+While its recall is lower than Logistic Regression, it highlights
+clear thresholds and dominant drivers of risk, making it valuable
+for validating whether model logic aligns with operational intuition.
+
+Operational Role
+----------------
+- Supporting explainability model
+- Used to communicate drivers of risk
+- Helps validate and challenge decision rules
+
+Limitations
+-----------
+- Misses some early risk signals
+- Not suitable as a standalone risk detector

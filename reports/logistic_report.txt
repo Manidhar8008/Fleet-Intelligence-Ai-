@@ -1,0 +1,34 @@
+MODEL: Logistic Regression
+PURPOSE: Primary risk scoring model
+
+Evaluation Context
+------------------
+Decision Grain: Trip-level
+Positive Class: High intervention risk
+Business Priority: High recall (missing risk is costlier than false alerts)
+
+Performance Summary
+-------------------
+Accuracy: ~0.96 – 0.97
+Recall (Risk = 1): High (≈ 1.0)
+ROC AUC: ~0.99
+
+Interpretation
+--------------
+Logistic Regression performs strongly as an early warning system.
+The model prioritizes recall, ensuring that risky trips and assets
+are rarely missed, even at the cost of investigating some false positives.
+
+This behavior aligns well with operational use cases where proactive
+maintenance and intervention reduce downstream costs.
+
+Operational Role
+----------------
+- Primary risk scoring engine
+- Used to rank trips and assets by intervention priority
+- Feeds downstream decision logic rather than triggering actions directly
+
+Limitations
+-----------
+- Less interpretable than rule-based models
+- Requires thresholding and business rules for final decisions
