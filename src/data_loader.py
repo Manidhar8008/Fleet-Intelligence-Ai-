@@ -31,7 +31,7 @@ from enum import Enum
 import numpy as np
 import pandas as pd
 
-from decision_engine import VehicleState
+from .decision_engine import VehicleState
 
 # Configure logging
 logging.basicConfig(
