@@ -1,14 +1,14 @@
-# Fleet Decision Intelligence System
+# Fleet Intelligence AI
 
-**Enterprise-grade AI-powered fleet optimization platform for micro-mobility operators**
+**Production-Ready SaaS MVP for Mobile Fleet Management**
 
-An intelligent decision system that provides real-time risk detection, revenue optimization, and actionable recommendations for managing electric scooter and bike fleets.
+Enterprise-grade AI-powered fleet optimization platform for micro-mobility operators. Real-time risk detection, revenue optimization, and AI-powered recommendations for managing electric scooter, bike, EV, and delivery fleets.
 
 ---
 
 ## 🎯 What This Does
 
-The Fleet Decision Intelligence System is a **production-ready Streamlit dashboard** that:
+The **Fleet Intelligence AI platform** is a **production-ready Streamlit dashboard** that:
 
 ✨ **Real-time Risk Scoring** — Analyzes 40+ vehicle metrics using a weighted risk model  
 💡 **AI Decision Engine** — Generates actionable recommendations (charging, maintenance, rebalancing)  
@@ -21,20 +21,73 @@ The Fleet Decision Intelligence System is a **production-ready Streamlit dashboa
 ## 🚀 Quick Start (5 Minutes)
 
 ### Prerequisites
-- Python 3.8+ installed
+- Python 3.9+ installed
+- Windows, Mac, or Linux
 
-### Step 1: Install Dependencies
+### Step 1: Navigate to App Directory
+```bash
+cd app
+```
+
+### Step 2: Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 2: Run the Dashboard
+### Step 3: Run the Platform
+**Windows:**
 ```bash
-streamlit run app.py
+run.bat
 ```
 
-### Step 3: View in Browser
-Dashboard opens automatically at **http://localhost:8501**
+**Mac/Linux:**
+```bash
+chmod +x run.sh
+./run.sh
+```
+
+**Or directly:**
+```bash
+python -m streamlit run main.py
+```
+
+### Step 4: Access in Browser
+Opens automatically at **http://localhost:8501**
+
+### Step 5: Try It
+- Click "Generate Demo Fleet" to see 150 synthetic scooters
+- Or upload your own CSV with columns: `vehicle_id, battery, utilization, zone`
+
+---
+
+## 📁 Directory Structure
+
+```
+app/                        ← PRODUCTION CODE (USE THIS)
+├── main.py                 Entry point for Streamlit
+├── requirements.txt        All dependencies
+├── README.md              Quick start guide
+├── ARCHITECTURE.md        System design
+├── DEPLOYMENT.md          5 deployment options
+│
+├── core/                  Data & decision pipeline
+│   ├── data_loader.py
+│   ├── preprocessing.py
+│   ├── feature_engineering.py
+│   ├── decision_engine.py
+│   └── insights_engine.py
+│
+├── models/                ML scoring engines
+│   └── risk_model.py      Risk scoring (0-100)
+│
+├── utils/                 Configuration & logging
+│   ├── config.py
+│   └── logger.py
+│
+└── data/                  Data storage
+    └── sample_fleet.csv   Sample data
+
+See MIGRATION_COMPLETE.md for consolidation details.
 
 ---
 
@@ -66,6 +119,26 @@ Real-time recommendations grouped by urgency:
 - Battery health distribution (pie chart)
 - Fleet utilization breakdown (bar chart)
 - Historical trends and patterns
+
+---
+
+## 🚀 Quick Start (5 Minutes)
+
+### Prerequisites
+- Python 3.8+ installed
+
+### Step 1: Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### Step 2: Run the Dashboard
+```bash
+streamlit run app.py
+```
+
+### Step 3: View in Browser
+Dashboard opens automatically at **http://localhost:8501**
 
 ---
 
