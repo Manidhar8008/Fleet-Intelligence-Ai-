@@ -2,7 +2,7 @@
 
 **Production-Ready SaaS MVP for Mobile Fleet Management**
 
-Enterprise-grade AI-powered fleet optimization platform for micro-mobility operators. Real-time risk detection, revenue optimization, and AI-powered recommendations for managing electric scooter, bike, EV, and delivery fleets.
+“This system helps mobility and logistics startups reduce downtime, predict failures, and optimize fleet operations using AI-driven insights.”
 
 ---
 
