@@ -144,6 +144,7 @@ Dashboard opens automatically at **http://localhost:8501**
 
 ## 🏗️ Architecture
 
+
 ```
 project_root/
 ├── app.py                    # Main Streamlit dashboard (ENTRY POINT)
